@@ -1,0 +1,21 @@
+.container {
+    background-image: url(assets/stacked_tp.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #f5c229;
+    border-bottom-style: outset;
+    border-width: 7px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    color: #f5c229;
+    height: 500px;
+    padding: 10px 10px 20px 10px;
+    width: 284px;   
+}
+
+h1  {
+    color:#f5c229;
+    text-shadow: 3px 3px 6px #000000;
+  }
