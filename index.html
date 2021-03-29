@@ -16,14 +16,67 @@
     <div class="container text-center">
         <h1 class="display-1 mt-5">The Great Debate</h1>
         <p class="lead text-light">Should it be over or under?</p>
-        <button type="button" class="btn btn-outline-warning mt-5" onclick="document.location='/Users/saudiahussain/Desktop/cl/about.html'">Take the Plunge</button>
+        <a target="_blank"><button type="button" class="btn btn-outline-info mt-5" onclick="window.open('about.html', '_blank')">Take the Plunge</button></a>
     </div>
 
+    <button class="tablink" onclick="openPage('Home', this, '#ffb833')">Over or Under</button>
+    <button class="tablink" onclick="openPage('History', this, '#ffb833')">History of Toilet Paper</button>
+    <button class="tablink" onclick="openPage('Contact', this, '#ffb833')">Stats</button>
+    <button class="tablink" onclick="openPage('About', this, '#ffb833')">Take the Plunge</button>
+    
+    <div id="Home" class="tabcontent">
+      <h3><u>The Great Toilet Paper Debate</u></h3>
+      <p>The eternal question: Should toilet paper hang <b>over</b> or <b>under</b>?  Modern engineering has created an efficient 
+        way to dispense toilet paper, but it has left orientation up to the consumer.  In determining which
+        is best, there are numerous variables, statistics, and principles of mechanics to take into account.  And simple efficiency is not the only concern: for many,
+        TP orientation is a matter of identity, lifestyle, and passion.  Let us walk you through the timeless and enduring debate.</p>
+       <img src="assets/over.jpg" alt="Toilet Paper Over" style="float:left; width:500px; height:500px;"> 
+       <img src="assets/under.jpg" alt="Toilet Paper Under" style="float:right; width:500px; height:500px;"> 
+    </div>
+    
+    <div id="History" class="tabcontent">
+      <h3><u>A Brief History of Toilet Paper</u></h3>
+      <p>First Documented use of toilet paper.</p>
+       <img src="assets/history1.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
+       <p>Modern toilet paper invented by <strong>Joseph Gayetty</strong>.  It was sold in stacks of square sheets, like disposable napkins today.</p>
+       <img src="assets/history2.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
+       <p>Modern rolls are engineeres and mass produced.</p>
+       <img src="assets/history3.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3><u>Statistics</u></h3>
+      <img src="assets/stats.jpg" alt="Toilet Paper Under" style="float:center; width:500px; height:450px;"> 
+    </div>
+    
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+    </div>
+
+    <script>
+      function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+              tablinks[i].style.color = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+          elmnt.style.color = "white";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      //  document.getElementById("defaultOpen").click(); ****id="defaultOpen" (add to hone button if using)
+    </script>
     
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>-->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

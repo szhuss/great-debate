@@ -1,21 +1,68 @@
+* {box-sizing: border-box}
+
 .container {
     background-image: url(assets/stacked_tp.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom-color: #f5c229;
+    border-bottom-color: #0dcaf0;
     border-bottom-style: outset;
     border-width: 7px;
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
-    color: #f5c229;
+    color: #0dcaf0;
     height: 500px;
     padding: 10px 10px 20px 10px;
-    width: 284px;   
+    width: 284px;
 }
 
 h1  {
-    color:#f5c229;
+    color:#0dcaf0;
     text-shadow: 3px 3px 6px #000000;
   }
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0px;
+    font-family: Arial;
+}
+
+/* ================================================================
+styles navigation
+================================================================  */
+
+/* Style the tab buttons */
+.tablink {
+    background-color: #0dcaf0;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #a6a6a6;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: #664200;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Style each tab content individually */
+#Home {background-color: #ffb833;}
+#History {background-color: #ffb833;}
+#Contact {background-color:#ffb833;}
+#About {background-color:#ffb833;} 
+
