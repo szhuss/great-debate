@@ -14,7 +14,7 @@
     based on an individuals toilet paper installation preferences.
 
     Lastly, the display of technical ability with use of HTML, CSS, and JS
-    can be descirbed as nothing less than impressive, for a 
+    can be described as nothing less than impressive, for a 
     Software Engineer Apprentice. The code works but I don't know why - kidding! 
 
 
