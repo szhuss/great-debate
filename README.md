@@ -5,7 +5,7 @@
     Capstone project for codeLouisville Front-End Web Development course.
 
     The Great Debate is a fun and creative idea with real-world
-    application.  It's jocular content provides comedic relief to the 
+    application.  Its jocular content provides comedic relief to the 
     otherwise very significant debate of whether toilet paper should be 
     installed over or under.  
 
@@ -22,7 +22,9 @@
 
     built mobile first
 
-    includes 2 media queries
+    includes 2 media queries:
+        *modals resize for larger screens
+        *tablinks resize for larger screens
 
     Uploaded to GH at least 5 times
 
@@ -32,13 +34,13 @@
 
     JS - show/hide one or more content areas or elements on your site through clicking a button
 
-    +1 more - pending
+    +1 more - modals and carousel (js)
 
 
 ##Roadmap & Project Status
 
     The code is working.  
-    In order to continue practicing, I will begin refactoring ... very slowly - BOLO for 258 bugs!
+    In order to continue practicing, I will begin adding addition CSS as well as refactoring ... very slowly - BOLO for 258 bugs!
 
 ##Authors and Acknowledgements
 
@@ -48,6 +50,6 @@
         Shout out to codeLou and staff, 
         all the mentors but especially MIKE SHEEHY, 
         my zoom breakout room members - thanks to all of us for sitting quiety and staring at each other.
-        There was really no bandwidth left to get to know yall after the mandatory standup 
+        There was really no bandwidth left to get to know y'all after the mandatory standup 
             and Treehouse content each week.
         Speaking of, shout out to Guil and 'dem at TH.  CEO's of TMI, but in a good way.    

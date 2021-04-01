@@ -17,27 +17,35 @@
     <div class="container text-center">
         <h1 class="display-1 mt-5">The Great Debate</h1>
         <p class="lead text-light">Should it be over or under?</p>
-        <button type="button" class="btn btn-outline-info mt-5" onclick="window.open('about.html', '_blank')">Take the Plunge</button>
+        <a href="#section4"><button type="button" class="btn btn-outline-info mt-5" onclick="openPage('Roll', '#ffb833')">Take the Plunge</button></a>
     </div>
 
     <div>
-      <button class="tablink" onclick="openPage('Over-Under', this, '#ffb833')">Over or Under</button>
-      <button class="tablink" onclick="openPage('History', this, '#ffb833')">TP History</button>
-      <button class="tablink" onclick="openPage('Stats', this, '#ffb833')">Stats</button>
-      <button class="tablink" onclick="openPage('Roll', this, '#ffb833')">How Do You Roll?</button>
+      <!-- <button class="tablink" onclick="openPage('Over-Under', this, '#ffb833')">Over or Under</button> -->
+      <a href="#section1"><button class="tablink" onclick="openPage('Over-Under', this, '#ffb833')">Over or Under</button></a>
+      <a href="#History"><button class="tablink" onclick="openPage('History', this, '#ffb833')">TP History</button></a>
+      <a href="#section3"><button class="tablink" onclick="openPage('Stats', this, '#ffb833')">Stats</button></a>
+      <a href="#section4"><button class="tablink" onclick="openPage('Roll', this, '#ffb833')">How Do You Roll?</button></a>
     </div>
-    
-    <div id="Over-Under" class="tabcontent">
-      <h3><u>The Great Toilet Paper Debate</u></h3>
+     
+    <div id="Over-Under" class="tabcontent"><br>
+      <h3 id="section1"><u>The Great Toilet Paper Debate</u></h3>
       <p>The eternal question: Should toilet paper hang <b>over</b> or <b>under</b>?  Modern engineering has created an efficient 
         way to dispense toilet paper, but it has left orientation up to the consumer.  In determining which
         is best, there are numerous variables, statistics, and principles of mechanics to take into account.  And simple efficiency is not the only concern: for many,
         TP orientation is a matter of identity, lifestyle, and passion.  Let us walk you through the timeless and enduring debate.</p>
-      <img src="assets/over.jpg" alt="Toilet Paper Over" style="float:center; width:500px; height:500px;"> 
-      <img src="assets/under.jpg" alt="Toilet Paper Under" style="float:center; width:500px; height:500px;"> 
+      <img id="imgO" src="assets/over.jpg" alt="Toilet Paper Over"><br>
+      <br> 
+      <img id="imgU" src="assets/under.jpg" alt="Toilet Paper Under"> 
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
+  <strong>when the user starts to scroll the page</strong>.</div>
     
-    <div id="History" class="tabcontent">
+    <!-- <div id="History" class="tabcontent">
       <h3><u>A Brief History of Toilet Paper</u></h3>
       <p>First Documented use of toilet paper.</p>
       <img src="assets/history1.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
@@ -45,10 +53,53 @@
       <img src="assets/history2.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
       <p>Modern rolls are engineeres and mass produced.</p>
       <img src="assets/history3.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
+    </div> -->
+
+    <div id="History" class="tabcontent">
+
+      <div class="slideshow-container"><br>
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img id="imgHist" src="assets/history1.jpg">
+          <div class="text">First Documented use of toilet paper.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img id="imgHist2" src="assets/history2.jpg">
+          <div class="text">Modern toilet paper invented by <strong>Joseph Gayetty</strong>.  It was sold in stacks of square sheets, like disposable napkins today.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img id="imgHist3" src="assets/history3.jpg">
+          <div class="text">Modern rolls are engineers and mass produced.</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
     </div>
 
-    <div id="Stats" class="tabcontent">
-      <h3><u>Statistics</u></h3>
+ 
+    <!-- <p>First Documented use of toilet paper.</p>
+    <img src="assets/history1.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
+    <p>Modern toilet paper invented by <strong>Joseph Gayetty</strong>.  It was sold in stacks of square sheets, like disposable napkins today.</p>
+    <img src="assets/history2.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;"> 
+    <p>Modern rolls are engineeres and mass produced.</p>
+    <img src="assets/history3.jpg" alt="History of Toilet Paper" style="width:400px; height:450px;">  -->
+
+    <div id="Stats" class="tabcontent"><br>
+      <h3 id="section3"><u>Statistics</u></h3>
       <p><b>50%</b> of people pay attention to toilet paper orientation.</p>
       <p>The average American spends <b>half an hour per year</b> looking for the end of the roll.
         National agreement would save Americans <b>$300 million</b> per year in productivity, or 
@@ -56,21 +107,22 @@
       <p><b>20%</b> of people have flipped a roll around when it was facing the wrong direction.</p>
       <p><b>1 in 5</b> people get annoyed if the roll is facing the wrong direction.  <b>Men</b>
         are more likley than woman to become annnoyed with the situation.</p>
-      <img src="assets/stats.jpg" alt="Toilet Paper Under" style="float:center; width:500px; height:425px;"> 
+      <img src="assets/stats.jpg" alt="Toilet Paper Under"> 
     </div>
 
     <!-- ================================================================
     modal 
     ================================================================ -->
     <div id="Roll" class="tabcontent">
-      <h2>Image Modal</h2>
-      <p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
-      <p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
-      <p>Don't worry if you do not understand the code right away. When you are done with CSS, go to our JavaScript Tutorial to learn more.</p>
-      <img id="myImg" src="assets/plunge.jpg" alt="Plunge" width="200" height="200">
-      <img id="myImg2" src="assets/plunge2.jpg" alt="Plunge II" width="200" height="200">
-      <img id="myImg3" src="assets/plunge3.jpg" alt="Plunge III" width="200" height="200">
-      <img id="myImg4" src="assets/plunge4.jpg" alt="Plunge IIII" width="200" height="200"> 
+      <h3 id="section4"><u>What does your TP installation style say about you?</u></h3><br>
+      <p>Click on the picture that best describes how you install your TP.</p>
+      <img id="myImg" src="assets/plunge.jpg" alt="You are failthful, logical and sensible - a traditionalist
+      who takes special joy in keeping his or her environment well-regulated.">
+      <img id="myImg2" src="assets/plunge2.jpg" alt="You are carefree, enthusiastic and spontaneous -- a heedless
+      fool with a skewed perception of reality. Possibly a cat owner.">
+      <img id="myImg3" src="assets/plunge3.jpg" alt="You are reckless, incorrigible, and lazy -- most likley
+      male, with the attention span of a goldfish.">
+      <img id="myImg4" src="assets/plunge4.jpg" alt="You are most likley to participate in crimes against humanity -- a PSYCHOPATH."> 
 
       <!-- <h3><u>What your toilet paper says about you</u></h3>
       <img src="assets/plunge.jpg" alt="History of Toilet Paper" style="width:200px; height:175px;"> 
